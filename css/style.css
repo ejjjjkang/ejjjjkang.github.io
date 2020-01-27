@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+.title {
+  font-family: "Fredoka One", cursive;
+  font-size: 200%;
+  color: #22cfcf;
+}
+
+.profile-item {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.pub {
+  font-family: "Open Sans", sans-serif;
+  font-size: 50%;
+  font-weight: 300;
+  color: gray;
+}
+
+.pub_author {
+  font-family: "Open Sans", sans-serif;
+}
+
+.pub_publisher {
+  font-family: "Open Sans", sans-serif;
+}
+
+.introduction {
+  font-family: "Fredoka One", cursive;
+  font-size: 200%;
+  color: #22cfcf;
+}
