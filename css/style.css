@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Fredoka+One&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text&display=swap");
+
+body {
+}
+.container {
+  background: white;
+  opacity: 0.9;
+}
 
 .title {
-  font-family: "Fredoka One", cursive;
+  font-family: "Crimson Text", serif;
+
   font-size: 200%;
   color: #22cfcf;
 }
@@ -17,7 +26,7 @@
   font-family: "Open Sans", sans-serif;
   font-size: 50%;
   font-weight: 300;
-  color: gray;
+  color: black;
 }
 
 .pub_author {
@@ -29,7 +38,12 @@
 }
 
 .introduction {
-  font-family: "Fredoka One", cursive;
-  font-size: 200%;
+  font-family: "Crimson Text", serif;
+
+  font-size: 250%;
   color: #22cfcf;
+}
+
+.fab {
+  font-size: 250%;
 }

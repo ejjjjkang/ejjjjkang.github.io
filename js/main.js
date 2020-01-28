@@ -6,6 +6,8 @@ function init() {
   Tabletop.init({ key: csv, callback: showInfo, simpleSheet: true }); //multiple sheet should be changed
 }
 
+// TODO: Filtering according to the fields, seperate by date
+
 function showInfo(d, tabletop) {
   const container = document.querySelector(".title");
   for (let i = 0; i < d.length; i++) {
