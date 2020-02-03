@@ -12,7 +12,6 @@ body {
 
 .title {
   font-family: "Crimson Text", serif;
-
   font-size: 200%;
   color: #22cfcf;
 }
@@ -27,6 +26,8 @@ body {
   font-size: 50%;
   font-weight: 300;
   color: black;
+  line-height: 130%;
+  display: inline;
 }
 
 .pub_author {
@@ -35,6 +36,9 @@ body {
 
 .pub_publisher {
   font-family: "Open Sans", sans-serif;
+}
+.pu_title {
+  font-weight: 700;
 }
 
 .introduction {
@@ -46,4 +50,17 @@ body {
 
 .fab {
   font-size: 250%;
+}
+
+.profile-image {
+  height: 100%;
+  width: auto;
+}
+
+.link {
+  display: inline-block;
+  font-size: 90%;
+  color: purple;
+  font-weight: 800;
+  padding: 0.5%;
 }
