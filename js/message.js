@@ -5,7 +5,6 @@ function intro() {
   for (let i = 0; i < message.length; i++) {
     container.push(message[i]);
     div.appendChild(container);
-    console.log(container);
   }
 }
 

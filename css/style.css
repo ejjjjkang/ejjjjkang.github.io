@@ -27,7 +27,7 @@ body {
   font-weight: 300;
   color: black;
   line-height: 130%;
-  display: inline;
+  display: inline-block;
 }
 
 .pub_author {
@@ -58,9 +58,7 @@ body {
 }
 
 .link {
-  display: inline-block;
   font-size: 90%;
-  color: purple;
   font-weight: 800;
   padding: 0.5%;
 }
