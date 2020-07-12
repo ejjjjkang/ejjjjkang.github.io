@@ -62,3 +62,14 @@ body {
   font-weight: 800;
   padding: 0.5%;
 }
+
+.iconList {
+  padding-top: 3%;
+}
+
+.icon_ {
+  padding-right: 2%;
+  display: inline-block;
+  font-size: 200%;
+  color: #ccd1d1;
+}
