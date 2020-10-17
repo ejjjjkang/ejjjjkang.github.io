@@ -2,8 +2,6 @@
 var csv =
   "https://docs.google.com/spreadsheets/d/1gYzw56_7EyoKAitdRL-_5j2jCmXorbgoUnZTimuqBWc/edit?usp=sharing";
 
-var blog_link = "https://eunkang-blog.netlify.app/";
-
 var field_list = ["Poster", "Workshop", "Conference", "Journal"];
 
 function init() {
@@ -60,11 +58,5 @@ function showInfopub(d, tabletop) {
     }
   }
 }
-
-function blogPost(){
-  const blogPost_ = document.querySelector(".title_blog");
-  blogPost_.className = "section";
-}
-
 
 window.addEventListener("DOMContentLoaded", init);

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Crimson+Text&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Work+Sans:wght@200;300;400;500;800&display=swap");
 
 body {
 }
@@ -11,18 +12,23 @@ body {
 }
 
 .title {
-  font-family: "Crimson Text", serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 200%;
+  font-weight: 500;
   color: #22cfcf;
 }
 
+.align-item {
+  align-items: center;
+}
+
 .profile-item {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 300;
 }
 
 .pub {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 50%;
   font-weight: 300;
   color: black;
@@ -31,20 +37,23 @@ body {
 }
 
 .pub_author {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .pub_publisher {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 .pu_title {
-  font-weight: 700;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
 }
 
 .introduction {
-  font-family: "Crimson Text", serif;
+  font-family: "Fredericka the Great", cursive;
 
-  font-size: 250%;
+  margin: 5%;
+  text-align: center;
+  font-size: 320%;
   color: #22cfcf;
 }
 
@@ -55,6 +64,8 @@ body {
 .profile-image {
   height: 100%;
   width: auto;
+  border-radius: 10000px;
+  overflow: hidden;
 }
 
 .link {
@@ -72,4 +83,12 @@ body {
   display: inline-block;
   font-size: 200%;
   color: #ccd1d1;
+}
+
+.overview-introduction {
+  display: block;
+}
+
+.overview-updatenews {
+  display: block;
 }
