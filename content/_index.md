@@ -209,6 +209,7 @@ sections:
           - publication
         exclude_featured: true
       text: |-      
+        {{publications}}
         [See all publications > ](./publication/).
     design:
       columns: '2'
