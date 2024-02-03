@@ -208,10 +208,8 @@ sections:
         folders:
           - publication
         exclude_featured: true
-      text: |-
-        {{% callout note %}}
+      text: |-      
         [See all publications > ](./publication/).
-        {{% /callout %}}
     design:
       columns: '2'
       view: citation
