@@ -51,10 +51,9 @@ featured: false
 # url_pdf: ""
 # url_code: "https://github.com/HugoBlox/hugo-blox-builder"
 # url_dataset: "https://github.com/HugoBlox/hugo-blox-builder"
-# url_poster: ""
+url_poster: "https://dl.acm.org/doi/abs/10.1145/3612939"
 # url_project: ""
-# url_slides: ""
-url_source: "https://dl.acm.org/doi/abs/10.1145/3612939"
+# url_source: ""
 # url_video: "https://youtube.com"
 
 # Featured image
@@ -77,7 +76,7 @@ url_source: "https://dl.acm.org/doi/abs/10.1145/3612939"
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: example
+# slides: example
 ---
 
 <!-- {{% callout note %}}
