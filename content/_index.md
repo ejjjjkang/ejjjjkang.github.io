@@ -204,12 +204,14 @@ sections:
     id: featured
     content:
       title: Publications
-      text: |-
-        [See all publications 〉 ](./publication/).
       filters:
         folders:
           - publication
         exclude_featured: true
+      text: |-
+        {{% callout note %}}
+        [See all publications > ](./publication/).
+        {{% /callout %}}
     design:
       columns: '2'
       view: citation
