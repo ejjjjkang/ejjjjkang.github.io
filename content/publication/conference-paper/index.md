@@ -7,7 +7,11 @@ title: "The Future of Conferences Is Unconferences: Exploring a Decentralized Ne
 authors:
   - Soya Park
   - admin
-  - Robert Ford
+  - Karen Joy
+  - Rosanna Bellini
+  - J{\'e}r{\'e}mie Lumbroso
+  - Dana{\"e} Metaxa
+  - Andr{\'e}s} Monroy-Hern{\'a}ndez
 
 # Author notes (optional)
 # author_notes:
@@ -73,7 +77,7 @@ url_source: "https://dl.acm.org/doi/abs/10.1145/3612939"
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-# slides: example
+slides: example
 ---
 
 <!-- {{% callout note %}}
