@@ -16,9 +16,9 @@ const Menubar = () => {
 			<MenuItemWrapper>
 				<Link to="/#publications">Publications</Link>
 			</MenuItemWrapper>
-			<MenuItemWrapper>
+			{/* <MenuItemWrapper>
 				<Link to="/#reading-list">Reading List</Link>
-			</MenuItemWrapper>
+			</MenuItemWrapper> */}
 			{/* <MenuItemWrapper>
 				<Link to="/#fun-project">Fun Projects</Link>
 			</MenuItemWrapper> */}

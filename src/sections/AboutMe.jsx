@@ -1,6 +1,8 @@
-import { Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import Wrapper from "../wrappers/SectionWrapper";
 import { HeaderWrapper } from "../wrappers/WordChipWrapper";
+import MiniCardWrapper from "../wrappers/MiniCardWrapper";
+import { story_content } from "../sources/textContent";
 
 const AboutMe = () => {
 	return (
@@ -13,6 +15,15 @@ const AboutMe = () => {
 				experiences, I engaged in several research projects focused on
 				AI-generated idol voices and algorithm biases of social media platforms.
 			</p>
+			<Stack direction={"row"} flexWrap="wrap" justifyContent={"space-evenly"}>
+				{story_content.map((story, index) => (
+					<MiniCardWrapper
+						key={index}
+						title={story.title}
+						content={story.content}
+					/>
+				))}
+			</Stack>
 		</Wrapper>
 	);
 };

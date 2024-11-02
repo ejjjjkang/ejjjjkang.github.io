@@ -4,6 +4,7 @@ import Wrapper from "../wrappers/SectionWrapper";
 
 import "./index.css";
 import NewsWrapper from "../wrappers/NewsWrapper";
+import { news_content } from "../sources/textContent";
 
 const Main = () => {
 	return (
@@ -40,9 +41,13 @@ const Main = () => {
 								values. <br />
 							</p>
 						</Stack>
-						<NewsWrapper date="Jan 17, 2023">
-							The paper I worked as a collaborator has accepted to CHI 2023🎉🎉
-						</NewsWrapper>
+						{news_content.map((news, index) =>
+							news.featureds ? (
+								<NewsWrapper key={index} date={news.date}>
+									{news.content}
+								</NewsWrapper>
+							) : null
+						)}
 					</Stack>
 				</Stack>
 			</Stack>

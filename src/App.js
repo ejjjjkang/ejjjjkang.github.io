@@ -24,7 +24,7 @@ function App() {
 				<Divider />
 				<Projects />
 				<Divider />
-				<ReadingList />
+				{/* <ReadingList /> */}
 				<Divider />
 				<DailyLog />
 			</Stack>

@@ -1,10 +1,11 @@
 import Wrapper from "../wrappers/SectionWrapper";
 import CardWrapper from "../wrappers/CardWrapper";
 import { project_content } from "../sources/textContent";
-import { Button, Stack, Typography, Skeleton } from "@mui/material";
+import { Button, Stack, Typography, Skeleton, Box } from "@mui/material";
 import { ConferenceChipWrapper } from "../wrappers/WordChipWrapper";
 import ThumbnailWrapper from "../wrappers/ThumbnailWrapper";
 import { HeaderWrapper } from "../wrappers/WordChipWrapper";
+import ButtonWrapper from "../wrappers/ButtonWrapper";
 
 const Projects = () => {
 	return (
@@ -21,7 +22,7 @@ const Projects = () => {
 					<CardWrapper key={index}>
 						<Stack direction={"row"}>
 							{project.img ? (
-								<ThumbnailWrapper>project.img</ThumbnailWrapper>
+								<ThumbnailWrapper>{project.img}</ThumbnailWrapper>
 							) : (
 								<Skeleton variant="rectangular" width={300} height={150} />
 							)}
@@ -30,33 +31,39 @@ const Projects = () => {
 								alignItems={"flex-start"}
 								sx={{ p: 2 }}
 							>
-								<span>
+								<Box variant="span" sx={{ lineHeight: "150%", pb: 1 }}>
 									<ConferenceChipWrapper>
 										{project.conference}
 									</ConferenceChipWrapper>
 									{project.title}
-								</span>
-								<span>
+								</Box>
+								<Box variant="span">
 									{project.author.map((author) => (
 										<Typography key={author} sx={{ display: "inline", pr: 1 }}>
 											{author === "Eun Jeong Kang" ? (
-												<strong>{author}</strong>
+												<strong style={{ color: "#556fcf" }}>{author}</strong>
 											) : (
 												author
 											)}
 										</Typography>
 									))}
-								</span>
+								</Box>
 								<Stack direction={"row"} justifyContent={"flex-end"}>
-									<Stack>
-										<Button href={project.link}>Abs</Button>
-									</Stack>
-									<Stack>
-										<Button href={project.link}>DOI</Button>
-									</Stack>
-									<Stack>
-										<Button href={project.link}>PDF</Button>
-									</Stack>
+									{project.published ? (
+										<>
+											<ButtonWrapper link={project.link_abs} text="Abs" />
+											<ButtonWrapper link={project.link_doi} text="Doi" />
+											<ButtonWrapper link={project.link_pdf} text="PDF" />
+										</>
+									) : (
+										<>
+											<Stack sx={{ mr: 1, mt: 2 }}>
+												<Button variant="outlined" disabled>
+													To appear
+												</Button>
+											</Stack>
+										</>
+									)}
 								</Stack>
 							</Stack>
 						</Stack>
