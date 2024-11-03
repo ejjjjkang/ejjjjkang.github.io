@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ejjjjkang.github.io/static/css/main.5f609bec.css",
-    "main.js": "/ejjjjkang.github.io/static/js/main.5cc0df08.js",
+    "main.js": "/ejjjjkang.github.io/static/js/main.6d3b8f19.js",
     "static/js/453.6a0d684f.chunk.js": "/ejjjjkang.github.io/static/js/453.6a0d684f.chunk.js",
     "static/media/avatar.jpg": "/ejjjjkang.github.io/static/media/avatar.78bae8d62937a35279ed.jpg",
     "index.html": "/ejjjjkang.github.io/index.html",
     "main.5f609bec.css.map": "/ejjjjkang.github.io/static/css/main.5f609bec.css.map",
-    "main.5cc0df08.js.map": "/ejjjjkang.github.io/static/js/main.5cc0df08.js.map",
+    "main.6d3b8f19.js.map": "/ejjjjkang.github.io/static/js/main.6d3b8f19.js.map",
     "453.6a0d684f.chunk.js.map": "/ejjjjkang.github.io/static/js/453.6a0d684f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5f609bec.css",
-    "static/js/main.5cc0df08.js"
+    "static/js/main.6d3b8f19.js"
   ]
 }
