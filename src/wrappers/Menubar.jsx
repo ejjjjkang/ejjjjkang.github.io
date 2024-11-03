@@ -2,6 +2,7 @@ import { Box, Menu, Stack, Typography } from "@mui/material";
 import "./index.css";
 import { MenuItemWrapper } from "./WordChipWrapper";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Menubar = () => {
 	return (
@@ -11,10 +12,14 @@ const Menubar = () => {
 			sx={{ position: "fixed", right: "18%", zIndex: 3, opacity: 0.8 }}
 		>
 			<MenuItemWrapper>
-				<Link to="/#me">About me</Link>
+				<HashLink smooth to="/#me">
+					About me
+				</HashLink>
 			</MenuItemWrapper>
 			<MenuItemWrapper>
-				<Link to="/#publications">Publications</Link>
+				<HashLink smooth to="/#publications">
+					Publications
+				</HashLink>
 			</MenuItemWrapper>
 			{/* <MenuItemWrapper>
 				<Link to="/#reading-list">Reading List</Link>
@@ -23,7 +28,9 @@ const Menubar = () => {
 				<Link to="/#fun-project">Fun Projects</Link>
 			</MenuItemWrapper> */}
 			<MenuItemWrapper>
-				<Link to="/#resource">Resource</Link>
+				<HashLink smooth to="/#resource">
+					Resource
+				</HashLink>
 			</MenuItemWrapper>
 			{/* <MenuItemWrapper>
 				<Link to="/#resource">Korea</Link>
