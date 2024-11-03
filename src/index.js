@@ -2,31 +2,24 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import {
-	createBrowserRouter,
-	HashRouter,
-	RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-// const router = createBrowserRouter([
-// 	{
-// 		path: "/",
-// 		element: <App />,
-// 	},
-// 	// {
-// 	// 	path: "/publications",
-// 	// 	element: <div>publications</div>,
-// 	// },
-// ]);
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+const router = createBrowserRouter([
+	{
+		path: "/",
+		element: <App />,
+	},
+	// {
+	// 	path: "/publications",
+	// 	element: <div>publications</div>,
+	// },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
-		<HashRouter>
-			<App />
-			{/* <RouterProvider router={router} /> */}
-		</HashRouter>
+		<RouterProvider router={router} />
 	</React.StrictMode>
 );
 
