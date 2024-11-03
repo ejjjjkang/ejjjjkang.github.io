@@ -4,26 +4,29 @@ import "./index.css";
 import App from "./App";
 import {
 	createBrowserRouter,
-	createHashRouter,
+	HashRouter,
 	RouterProvider,
 } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 
-// const root = ReactDOM.createRoot(document.getElementById("root"));
-const router = createHashRouter([
-	{
-		path: "/",
-		element: <App />,
-	},
-	// {
-	// 	path: "/publications",
-	// 	element: <div>publications</div>,
-	// },
-]);
+const root = ReactDOM.createRoot(document.getElementById("root"));
+// const router = createBrowserRouter([
+// 	{
+// 		path: "/",
+// 		element: <App />,
+// 	},
+// 	// {
+// 	// 	path: "/publications",
+// 	// 	element: <div>publications</div>,
+// 	// },
+// ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
-		<RouterProvider router={router} />
+		<HashRouter>
+			<App />
+			{/* <RouterProvider router={router} /> */}
+		</HashRouter>
 	</React.StrictMode>
 );
 
