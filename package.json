@@ -1,7 +1,7 @@
 {
 	"name": "home-page",
 	"version": "0.1.0",
-	"homepage": "https://ejjjjkang.github.io/ejjjjkang.github.io/#",
+	"homepage": "https://ejjjjkang.github.io/ejjjjkang.github.io",
 	"private": true,
 	"dependencies": {
 		"@cascadia-code/scroll-to-hash-element": "^2.0.3",
