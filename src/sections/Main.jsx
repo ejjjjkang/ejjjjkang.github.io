@@ -1,6 +1,7 @@
 import { Stack } from "@mui/material";
 import ProfileWrapper from "../wrappers/ProfileWrapper";
 import Wrapper from "../wrappers/SectionWrapper";
+import { HeaderWrapper } from "../wrappers/WordChipWrapper";
 
 import "./index.css";
 import NewsWrapper from "../wrappers/NewsWrapper";
@@ -39,6 +40,28 @@ const Main = () => {
 								design), I aim to design AI systems that promote appropriate
 								reliance with responsibility, which aligns with stakeholder
 								values. <br />
+								<p>
+									Previously, I worked as a digital marketing strategist and
+									front-end developer that designs brand experience and
+									incorporates multi-stakeholders' values with advertisements.
+									Drawing on these experiences, I engaged in research projects
+									that investigated societal impacts of AI technologies on
+									end-users (
+									<a
+										className="inline_link"
+										href="https://ai-cultures.github.io/papers/when_ai_meets_the_k_pop_cultur.pdf"
+									>
+										fans
+									</a>
+									,{" "}
+									<a
+										className="inline_link"
+										href="https://doi.org/10.1145/3544548.3581386"
+									>
+										creators
+									</a>
+									).
+								</p>
 							</p>
 						</Stack>
 						{news_content.map((news, index) =>

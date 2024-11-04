@@ -13,6 +13,7 @@ function App() {
 	return (
 		<Container
 			className="inter-500"
+			id="me"
 			sx={{ position: "relative", backgroundColor: "white" }}
 		>
 			<ScrollToHashElement behavior="smooth" />
@@ -20,7 +21,7 @@ function App() {
 			<Stack direction={"column"}>
 				<Main />
 				<Divider />
-				<AboutMe />
+				{/* <AboutMe /> */}
 				<Divider />
 				<Projects />
 				<Divider />

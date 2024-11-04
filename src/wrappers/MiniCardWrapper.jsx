@@ -3,23 +3,29 @@ import styled from "styled-components";
 
 const StyledCard = styled.a`
 	text-decoration: none !important;
-	color: #7d7d7d;
-	font-size: 1.8em;
+	color: #ffffff;
+	font-size: 3em;
 	font-weight: 900;
+	z-index: 10;
+	position: absolute;
 `;
 
 const MiniCardWrapper = ({ title, content }) => {
 	return (
 		<Card
 			sx={{
-				p: 3,
+				width: "60%",
+				height: "100px",
 				m: 2,
-				width: "150px",
-				height: "150px",
-				borderRadius: "10%",
+				borderRadius: "10px",
+				position: "relative",
 			}}
 		>
 			<StyledCard>{title}</StyledCard>
+			<img
+				src={content}
+				style={{ zIndex: 10, width: "200%", margin: "auto", display: "block" }}
+			></img>
 		</Card>
 	);
 };

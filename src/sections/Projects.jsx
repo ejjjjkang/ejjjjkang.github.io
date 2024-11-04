@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Wrapper from "../wrappers/SectionWrapper";
 import CardWrapper from "../wrappers/CardWrapper";
 import { project_content } from "../sources/textContent";
@@ -8,6 +9,12 @@ import { HeaderWrapper } from "../wrappers/WordChipWrapper";
 import ButtonWrapper from "../wrappers/ButtonWrapper";
 
 const Projects = () => {
+	const [activeIndex, setActiveIndex] = useState(null);
+
+	const handleClick = (idx) => {
+		setActiveIndex(idx);
+	};
+
 	return (
 		<Wrapper>
 			<Stack direction={"column"} sx={{ p: 2 }}>
@@ -41,29 +48,54 @@ const Projects = () => {
 									{project.author.map((author) => (
 										<Typography key={author} sx={{ display: "inline", pr: 1 }}>
 											{author === "Eun Jeong Kang" ? (
-												<strong style={{ color: "#556fcf" }}>{author}</strong>
+												<strong style={{ color: "#bf55cf" }}>{author}</strong>
 											) : (
 												author
 											)}
 										</Typography>
 									))}
 								</Box>
-								<Stack direction={"row"} justifyContent={"flex-end"}>
-									{project.published ? (
-										<>
-											<ButtonWrapper link={project.link_abs} text="Abs" />
-											<ButtonWrapper link={project.link_doi} text="Doi" />
-											<ButtonWrapper link={project.link_pdf} text="PDF" />
-										</>
-									) : (
-										<>
-											<Stack sx={{ mr: 1, mt: 2 }}>
-												<Button variant="outlined" disabled>
-													To appear
-												</Button>
-											</Stack>
-										</>
-									)}
+								<Stack
+									direction={"column"}
+									sx={{ pt: 1 }}
+									justifyContent={"flex-start"}
+								>
+									<Stack direction={"row"}>
+										{project.published ? (
+											<>
+												<ButtonWrapper
+													abs={project.abs}
+													index={index}
+													handleClick={handleClick}
+													setActiveIndex={setActiveIndex}
+													activeIndex={activeIndex}
+													text="Abs"
+												/>
+												<ButtonWrapper link={project.link_doi} text="Doi" />
+												<ButtonWrapper link={project.link_pdf} text="PDF" />
+											</>
+										) : (
+											<>
+												<Stack sx={{ mr: 1, mt: 2 }}>
+													<Button variant="outlined" disabled>
+														To appear
+													</Button>
+												</Stack>
+											</>
+										)}
+									</Stack>
+									{index === activeIndex ? (
+										<Box
+											sx={{
+												backgroundColor: "#acdee9",
+												p: 1,
+												mt: 1,
+												borderRadius: "10px",
+											}}
+										>
+											{project.abs}
+										</Box>
+									) : null}
 								</Stack>
 							</Stack>
 						</Stack>

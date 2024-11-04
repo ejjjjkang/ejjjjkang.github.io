@@ -4,6 +4,8 @@ import EmailIcon from "@mui/icons-material/Email";
 import SchoolIcon from "@mui/icons-material/School";
 import { TbFileCv } from "react-icons/tb";
 import { LinkChipWrapper } from "../wrappers/WordChipWrapper";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import XIcon from "@mui/icons-material/X";
 
 const ProfileWrapper = () => {
 	return (
@@ -18,6 +20,12 @@ const ProfileWrapper = () => {
 				</LinkChipWrapper>
 				<LinkChipWrapper link="https://docs.google.com/document/d/1qHcXlC2tz-_s7MbvZIfg-cwp5LtR9dXpFsYHLS_Tc6Q/edit?usp=sharing">
 					<TbFileCv size={35} />
+				</LinkChipWrapper>
+				<LinkChipWrapper link="www.linkedin.com/in/ejeunkang">
+					<LinkedInIcon fontSize="large" />
+				</LinkChipWrapper>
+				<LinkChipWrapper link="https://x.com/eunxkang">
+					<XIcon fontSize="large" />
 				</LinkChipWrapper>
 			</Stack>
 		</Stack>
