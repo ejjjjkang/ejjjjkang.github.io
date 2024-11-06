@@ -15,6 +15,7 @@ const AboutMe = () => {
 				experiences, I engaged in research projects that investigate societal
 				impacts of AI technologies on end-users.
 			</p>
+
 			<Stack direction={"row"}>
 				<Stack
 					direction={"column"}

@@ -115,6 +115,11 @@ export const story_content = [
 
 export const news_content = [
 	{
+		date: "Nov 11, 2024",
+		content: "Will be attending CSCW 2024!",
+		featureds: true,
+	},
+	{
 		date: "Sep 24, 2024",
 		content: "The paper I worked at KIXLAB has been accepted to CSCW 2025",
 		featureds: true,
@@ -123,6 +128,6 @@ export const news_content = [
 		date: "Jan 17, 2023",
 		content:
 			"The paper I worked as a collaborator has been accepted to CHI 2023🎉🎉",
-		featureds: true,
+		featureds: false,
 	},
 ];
