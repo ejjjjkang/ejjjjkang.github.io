@@ -89,33 +89,37 @@ be potentially designed for bridging the fan-idol relationship.",
 export const story_content = [
 	{
 		title: "When emotions become form vol.2",
+		img: "/thumbnails/vol2.png",
 		content: "",
 		altContent: "",
+		link: "https://vimeo.com/628308451",
+	},
+	{
+		title: "A Piece of Peace",
+		content: "Micrsoft Imagine Cup 2021 second place in Game area",
+		altContent: "",
+		link: "https://vimeo.com/628308451",
 	},
 	{
 		title: "FanARea",
+		img: "/thumbnails/walldol.png",
 		content: "",
 		altContent: "",
+		link: "https://vimeo.com/628308451",
 	},
 	{
 		title: "Partti",
-		content: "/thumbnails/partti.png",
-		altContent: "",
-	},
-	{
-		title: "Crowd Forest",
+		img: "/thumbnails/partti.png",
 		content: "",
 		altContent: "",
+		link: "https://vimeo.com/628308451",
 	},
 	{
 		title: "The Place Without Space",
-		content: "",
+		img: "/thumbnails/theplacewithoutspace.png",
+		content: "Showcase",
 		altContent: "",
-	},
-	{
-		title: "BodyFood",
-		content: "",
-		altContent: "",
+		link: "https://vimeo.com/628308451",
 	},
 ];
 

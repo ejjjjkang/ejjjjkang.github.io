@@ -25,6 +25,8 @@ function App() {
 				<Divider />
 				<Projects />
 				<Divider />
+				<AboutMe />
+
 				{/* <ReadingList /> */}
 				<Divider />
 				<DailyLog />

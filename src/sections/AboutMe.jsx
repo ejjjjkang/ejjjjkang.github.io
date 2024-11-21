@@ -7,14 +7,9 @@ import { story_content } from "../sources/textContent";
 const AboutMe = () => {
 	return (
 		<Wrapper>
-			<HeaderWrapper id="me">About Me</HeaderWrapper>
-			<p>
-				Previously, I worked as a digital marketing strategist and front-end
-				developer that designs brand experience and incorporates
-				multi-stakeholders' values with advertisements. Drawing on these
-				experiences, I engaged in research projects that investigate societal
-				impacts of AI technologies on end-users.
-			</p>
+			<HeaderWrapper id="me">
+				Other Projects (Web development / Exhibition){" "}
+			</HeaderWrapper>
 
 			<Stack direction={"row"}>
 				<Stack
@@ -25,8 +20,10 @@ const AboutMe = () => {
 					{story_content.map((story, index) => (
 						<MiniCardWrapper
 							key={index}
+							img={story.img}
 							title={story.title}
 							content={story.content}
+							link={story.link}
 						/>
 					))}
 				</Stack>

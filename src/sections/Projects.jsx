@@ -20,14 +20,17 @@ const Projects = () => {
 			<Stack direction={"column"} sx={{ p: 2 }}>
 				<HeaderWrapper id="publications">Publications</HeaderWrapper>
 				<Typography variant="p">
-					This is a collection of projects I have worked on. You can find more
-					information in the PDFs.
+					This is a collection of publication I have worked on. You can find
+					more information in the PDFs.
 				</Typography>
 			</Stack>
 			<Stack direction={"row"} flexWrap={"wrap"}>
 				{project_content.map((project, index) => (
 					<CardWrapper key={index}>
-						<Stack direction={"row"}>
+						<Stack
+							direction={{ md: "row", xs: "column" }}
+							spacing={{ xs: "3" }}
+						>
 							{project.img ? (
 								<ThumbnailWrapper>{project.img}</ThumbnailWrapper>
 							) : (

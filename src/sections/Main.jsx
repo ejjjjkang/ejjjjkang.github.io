@@ -17,7 +17,7 @@ const Main = () => {
 					margin: "auto",
 				}}
 			>
-				<Stack direction={"row"} alignItems={"center"}>
+				<Stack direction={{ md: "row", xs: "column" }} alignItems={"center"}>
 					<ProfileWrapper />
 					<Stack direction={"column"} sx={{ p: 5 }}>
 						<Stack sx={{ lineHeight: "160%" }}>
