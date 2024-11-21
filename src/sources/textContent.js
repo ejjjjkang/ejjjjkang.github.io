@@ -90,7 +90,8 @@ export const story_content = [
 	{
 		title: "When emotions become form vol.2",
 		img: "/thumbnails/vol2.png",
-		content: "",
+		content:
+			"Artifact that uses AI generated images created based on Korea tradition abstract painting dataset",
 		altContent: "",
 		link: "https://vimeo.com/628308451",
 	},
@@ -103,14 +104,15 @@ export const story_content = [
 	{
 		title: "FanARea",
 		img: "/thumbnails/walldol.png",
-		content: "",
+		content:
+			"Social AR application that enables K-Pop fans to form physical social communities",
 		altContent: "",
 		link: "https://vimeo.com/628308451",
 	},
 	{
 		title: "Partti",
 		img: "/thumbnails/partti.png",
-		content: "",
+		content: "Collaborative dance video tutorial",
 		altContent: "",
 		link: "https://vimeo.com/628308451",
 	},

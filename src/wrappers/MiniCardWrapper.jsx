@@ -16,19 +16,17 @@ const MiniCardWrapper = ({ title, img, content, link }) => {
 	const [visible, setVisible] = useState(false);
 
 	return (
-		<Card
-			variant="outline"
-			sx={{
-				m: 2,
-				borderRadius: "10px",
-				position: "relative",
-			}}
-		>
-			<Stack direction={"row"} sx={{ p: 2, m: 1, width: "100%" }}>
-				<img src={img} style={{ width: "30%" }}></img>
+		<Card variant="outline">
+			<Stack direction={"row"} sx={{ p: 1, alignItems: "center" }}>
+				<Stack sx={{ width: "20%", height: "100%", m: 2 }}>
+					<img src={img}></img>
+				</Stack>
 				<Stack direction={"column"} sx={{ ml: 3 }}>
 					<StyledCard>{title}</StyledCard>
-					<ButtonWrapper link={link} text={"More"}></ButtonWrapper>
+					<StyledCard>{content}</StyledCard>
+					<Stack sx={{ width: "20%" }}>
+						<ButtonWrapper link={link} text={"More"}></ButtonWrapper>
+					</Stack>
 				</Stack>
 			</Stack>
 		</Card>
