@@ -93,13 +93,16 @@ export const story_content = [
 		content:
 			"Artifact that uses AI generated images created based on Korea tradition abstract painting dataset",
 		altContent: "",
-		link: "https://vimeo.com/628308451",
+		credits: "",
+		link: "https://vimeo.com/385763280",
 	},
 	{
 		title: "A Piece of Peace",
+		img: "/thumbnails/apop.png",
 		content: "Micrsoft Imagine Cup 2021 second place in Game area",
 		altContent: "",
-		link: "https://vimeo.com/628308451",
+		credits: "",
+		link: "https://youtu.be/uO8FNzCvZFA?si=pb6NqBdCj4Q2onpE",
 	},
 	{
 		title: "FanARea",
@@ -107,21 +110,24 @@ export const story_content = [
 		content:
 			"Social AR application that enables K-Pop fans to form physical social communities",
 		altContent: "",
+		credits: "",
 		link: "https://vimeo.com/628308451",
 	},
 	{
 		title: "Partti",
 		img: "/thumbnails/partti.png",
-		content: "Collaborative dance video tutorial",
+		content: "Collaborative K-Pop dance video tutorial",
 		altContent: "",
-		link: "https://vimeo.com/628308451",
+		credits: "",
+		link: "https://vimeo.com/670820074",
 	},
 	{
 		title: "The Place Without Space",
 		img: "/thumbnails/theplacewithoutspace.png",
-		content: "Showcase",
+		content: "VR artwork showcase",
 		altContent: "",
-		link: "https://vimeo.com/628308451",
+		credits: "",
+		link: "https://vimeo.com/310008502",
 	},
 ];
 
