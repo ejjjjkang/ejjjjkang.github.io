@@ -3,6 +3,7 @@ export const project_content = [
 		title:
 			"Can Fans Build Parasocial Relationships through Idols’ Simulated Voice Messages?: \
 			A Study of AI Private Call Users’: Perceptions, Cognitions, and Behaviors",
+		link_doi: "/FanAI_Camera_Ready.pdf",
 		img: "/thumbnails/fanAI02.png",
 		author: [
 			"Eun Jeong Kang",
@@ -12,7 +13,7 @@ export const project_content = [
 			"Juho Kim",
 		],
 		conference: "CSCW 2025",
-		published: false,
+		published: true,
 	},
 	{
 		title:
